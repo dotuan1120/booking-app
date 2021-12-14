@@ -1,0 +1,56 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "user3",
+  "password": "user3",
+  "role": "USER"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "user1"
+}
+
+###
+
+POST http://localhost:5000/api/bookings
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0ZDJmYWM3MWRhNjQzNDVmNWQ3NDkiLCJpYXQiOjE2MzkyOTUyMjV9.HOeAyKyqVrgGd8EZ54S_7RT1SsL4IrfzwGR4EvqTFvc
+
+{
+  "type": "Wellness Events",
+  "location": "Vietnam",
+  "date": "2021-12-09T16:59:07.256+00:00"
+}
+
+###
+
+GET http://localhost:5000/api/bookings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0ZDJmYWM3MWRhNjQzNDVmNWQ3NDkiLCJpYXQiOjE2MzkyOTUyMjV9.HOeAyKyqVrgGd8EZ54S_7RT1SsL4IrfzwGR4EvqTFvc
+
+###
+
+PUT http://localhost:5000/api/bookings/61b3410b8313a8dcc8e7b04f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWIyMzI5OWM5YjdmNGY3ZDc1OTBlYjQiLCJpYXQiOjE2MzkwNjgzMTN9.onNLZDKL1TB5_r8TWIOiWydruItLEU5eome9ApktE7g
+
+{
+  "type": "Wellness Events",
+  "location": "Vietnam",
+  "date": "2021-12-09T17:59:07.256+00:00",
+  "status": "Approved"
+}
+
+###
+DELETE http://localhost:5000/api/bookings/61b3410b8313a8dcc8e7b04f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWIyMzI5OWM5YjdmNGY3ZDc1OTBlYjQiLCJpYXQiOjE2MzkwNjgzMTN9.onNLZDKL1TB5_r8TWIOiWydruItLEU5eome9ApktE7g
+
+###
+GET http://localhost:5000/api/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0ZDJmYWM3MWRhNjQzNDVmNWQ3NDkiLCJpYXQiOjE2MzkyOTUyMjV9.HOeAyKyqVrgGd8EZ54S_7RT1SsL4IrfzwGR4EvqTFvc

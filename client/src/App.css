@@ -1,0 +1,113 @@
+.landing {
+  position: relative;
+  height: 100vh;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.landing-inner {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-inner form {
+  width: 30%;
+}
+
+.landing-inner h1,
+.landing-inner h4,
+.landing-inner p {
+  color: white;
+}
+
+.spinner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Floating add button */
+.btn-floating {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  background: transparent;
+  border: none;
+}
+
+.btn-floating:hover {
+  background: transparent;
+}
+
+.btn-floating:focus,
+.btn-floating:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Add new booking tooltip */
+.tooltip {
+  background: transparent;
+}
+
+.tooltip .arrow::before {
+  border-left-color: #78c2ad;
+}
+
+.tooltip-inner {
+  background: #78c2ad;
+}
+
+/* Booking border thicker */
+.border-success,
+.border-warning,
+.border-danger {
+  border-width: 2px;
+}
+
+/* Proposed date in booking creation modal */
+.proposed-date {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+/* Length of input in proposed date selection */
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+/* Button width in booking card*/
+.card-body button.btn {
+  width: 8rem;
+}
+
+.card-body button.btn.btn-danger {
+  margin-left: 1rem;
+}
+
+/* Nav bar */
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.navbar-brand {
+  margin-left: 1rem;
+}
