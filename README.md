@@ -10,16 +10,16 @@ For Fullerton Healthcare application
 Technology:
 MERN Stack
 
-Admin account:
+Admin account:  
 username: admin  
 password: admin
 
 User accounts:
 
-1. user1
+1. user1  
 username: user1  
 password: user1
 
-2. user2
+2. user2  
 username: user2  
 password: user2
