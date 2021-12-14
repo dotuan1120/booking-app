@@ -1,4 +1,4 @@
-# booking-app
+# Booking App
 Booking App
 
 Description:
